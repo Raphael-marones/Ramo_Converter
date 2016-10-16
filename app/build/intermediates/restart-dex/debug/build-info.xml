@@ -5,46 +5,47 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="6732704216376"
+    timestamp="26296053282716"
     token="-2716813531379793360"
-    verifier="R_CLASS_CHANGE" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="587" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="142" />
+        duration="0" />
     <task
         name="verifier"
-        duration="13" />
+        duration="0" />
 
     <artifact
         location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
         type="RESOURCES" />
-    <artifact
-        location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
-        type="DEX" />
 
     <build
-        timestamp="2789596414866"
+        timestamp="25546912698483"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="6732704216376"
+        timestamp="26194042646371"
         verifier="R_CLASS_CHANGE" >
-        <artifact
-            location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
-            type="RESOURCES" />
         <artifact
             location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
             type="DEX" />
+    </build>
+    <build
+        timestamp="26296053282716"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/instant-run-resources/resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

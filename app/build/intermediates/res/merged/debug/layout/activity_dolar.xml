@@ -28,7 +28,8 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        >
 
         <TextView
             android:layout_width="270dp"

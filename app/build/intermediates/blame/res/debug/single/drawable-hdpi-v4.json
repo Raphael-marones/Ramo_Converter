@@ -40,12 +40,12 @@
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_pressed_holo_light.9.png"
     },
     {
-        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
-        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
-    },
-    {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_focused_holo.9.png",
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_list_focused_holo.9.png"
+    },
+    {
+        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png",
+        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_list_pressed_holo_dark.9.png",

@@ -1894,12 +1894,13 @@ containing a value of this type.
         public static final int common_plus_signin_btn_text_light_pressed=0x7f020076;
         public static final int dolar=0x7f020077;
         public static final int euro=0x7f020078;
-        public static final int fundomoney=0x7f020079;
-        public static final int ieee_header=0x7f02007a;
-        public static final int libra=0x7f02007b;
-        public static final int libraesterlinasimbolos=0x7f02007c;
-        public static final int notification_template_icon_bg=0x7f02007e;
-        public static final int yene=0x7f02007d;
+        public static final int eurosymbol=0x7f020079;
+        public static final int fundomoney=0x7f02007a;
+        public static final int ieee_header=0x7f02007b;
+        public static final int libra=0x7f02007c;
+        public static final int libraesterlinasimbolos=0x7f02007d;
+        public static final int notification_template_icon_bg=0x7f02007f;
+        public static final int yene=0x7f02007e;
     }
     public static final class id {
         public static final int action0=0x7f0b006b;
@@ -1938,11 +1939,11 @@ containing a value of this type.
         public static final int decor_content_parent=0x7f0b004b;
         public static final int default_activity_button=0x7f0b0032;
         public static final int disableHome=0x7f0b000c;
-        public static final int dolarid=0x7f0b0067;
+        public static final int dolarid=0x7f0b0066;
         public static final int edit_query=0x7f0b004f;
         public static final int end=0x7f0b001b;
         public static final int end_padder=0x7f0b0077;
-        public static final int euroid=0x7f0b0068;
+        public static final int euroid=0x7f0b0065;
         public static final int expand_activities_button=0x7f0b0030;
         public static final int expanded_menu=0x7f0b0043;
         public static final int frameLayout=0x7f0b005e;
@@ -1950,11 +1951,11 @@ containing a value of this type.
         public static final int homeAsUp=0x7f0b000d;
         public static final int icon=0x7f0b0034;
         public static final int icon_only=0x7f0b0024;
-        public static final int ieneid=0x7f0b0069;
+        public static final int ieneid=0x7f0b0067;
         public static final int ifRoom=0x7f0b0021;
         public static final int image=0x7f0b0031;
         public static final int info=0x7f0b0076;
-        public static final int libraid=0x7f0b006a;
+        public static final int libraid=0x7f0b0068;
         public static final int light=0x7f0b0029;
         public static final int line1=0x7f0b0070;
         public static final int line3=0x7f0b0074;
@@ -1970,7 +1971,7 @@ containing a value of this type.
         public static final int progress_circular=0x7f0b0005;
         public static final int progress_horizontal=0x7f0b0006;
         public static final int radio=0x7f0b0046;
-        public static final int realid=0x7f0b0065;
+        public static final int realid=0x7f0b006a;
         public static final int retornarid=0x7f0b005c;
         public static final int screen=0x7f0b0015;
         public static final int scrollIndicatorDown=0x7f0b0040;
@@ -2004,7 +2005,7 @@ containing a value of this type.
         public static final int text=0x7f0b0075;
         public static final int text2=0x7f0b0073;
         public static final int textSpacerNoButtons=0x7f0b003f;
-        public static final int textView=0x7f0b0066;
+        public static final int textView=0x7f0b0069;
         public static final int textView2=0x7f0b005d;
         public static final int textView3=0x7f0b0063;
         public static final int textView4=0x7f0b0061;
