@@ -19,13 +19,10 @@ public class MainActivity extends AppCompatActivity {
     private ImageView botaoDolar;
     private ImageView botaoEuro;
     private ImageView botaoLibra;
-    private ImageView botaoYene;
+    private ImageView botaoIene;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    /**
-     *  Testing GitHub Desktop Interface
      */
     private GoogleApiClient client;
 
@@ -37,6 +34,8 @@ public class MainActivity extends AppCompatActivity {
 
         botaoDolar = (ImageView) findViewById(R.id.dolarid);
         botaoEuro = (ImageView) findViewById(R.id.euroid);
+        botaoLibra = (ImageView) findViewById(R.id.libraid);
+        botaoIene = (ImageView) findViewById(R.id.ieneid);
         valorReal = (EditText) findViewById(R.id.realid);
 
 
@@ -80,6 +79,45 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        botaoLibra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String textoValorReal = valorReal.getText().toString();
+                double valorReal = Double.parseDouble(textoValorReal);
+
+                double libraFinal = valorReal / (3.9);
+                System.out.print(libraFinal);
+
+                Intent intent2 = new Intent(MainActivity.this, LibraActivity.class);
+//                Bundle passing = new Bundle();
+//                passing.putDouble("libraEnd", libraFinal);
+                intent2.putExtra("passando_libra", libraFinal);
+
+                startActivity(intent2);
+
+            }
+        });
+
+        botaoIene.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String textoValorReal = valorReal.getText().toString();
+                double valorReal = Double.parseDouble(textoValorReal);
+
+                double ieneFinal = valorReal * (32.49);
+                System.out.print(ieneFinal);
+
+                Intent intent3 = new Intent(MainActivity.this, IeneActivity.class);
+//                Bundle passing = new Bundle();
+//                passing.putDouble("ieneEnd", ieneFinal);
+                intent3.putExtra("passando_iene", ieneFinal);
+
+                startActivity(intent3);
+
+            }
+        });
     }
 
 }
