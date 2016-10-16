@@ -9,12 +9,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="conversorieee.studio.com.conversorieee.DolarActivity"
     android:background="@drawable/fundomoney">
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        >
 
-    </FrameLayout>
     <TextView
         android:layout_width="270dp"
         android:layout_height="50dp"

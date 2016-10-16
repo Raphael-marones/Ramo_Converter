@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client2;
 
 
     @Override
@@ -43,18 +49,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+
                 String textoValorReal = valorReal.getText().toString();
-                double valorReal = Double.parseDouble(textoValorReal);
 
-                double dolarFinal = valorReal / (3.18);
-                System.out.print(dolarFinal);
+                int controlvariable = valorReal.getText().toString().length();
 
-                Intent intent = new Intent(MainActivity.this, DolarActivity.class);
-//                Bundle passing = new Bundle();
-//                passing.putDouble("dolarEnd", dolarFinal);
-                intent.putExtra("passando", dolarFinal);
+                if(controlvariable == 0) {
+                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    double valorReal = Double.parseDouble(textoValorReal);
 
-                startActivity(intent);
+                    double dolarFinal = valorReal / (3.35);
+
+
+                    Intent intent = new Intent(MainActivity.this, DolarActivity.class);
+
+                    intent.putExtra("passando", dolarFinal);
+
+                    startActivity(intent);
+                }
 
             }
         });
@@ -64,6 +78,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 String textoValorReal = valorReal.getText().toString();
+                int controlvariable = valorReal.getText().toString().length();
+
+                if(controlvariable == 0) {
+                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                }
+                else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
                 double euroFinal = valorReal / (3.68);
@@ -74,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
 //                passing.putDouble("dolarEnd", dolarFinal);
                 intent1.putExtra("passando_euro", euroFinal);
 
-                startActivity(intent1);
+                startActivity(intent1);}
 
             }
         });
@@ -84,9 +104,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 String textoValorReal = valorReal.getText().toString();
+                int controlvariable = valorReal.getText().toString().length();
+
+                if(controlvariable == 0) {
+                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                }
+                else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
-                double libraFinal = valorReal / (3.9);
+                double libraFinal = valorReal / (4.22);
                 System.out.print(libraFinal);
 
                 Intent intent2 = new Intent(MainActivity.this, LibraActivity.class);
@@ -94,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
 //                passing.putDouble("libraEnd", libraFinal);
                 intent2.putExtra("passando_libra", libraFinal);
 
-                startActivity(intent2);
+                startActivity(intent2);}
 
             }
         });
@@ -104,9 +130,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 String textoValorReal = valorReal.getText().toString();
+                int controlvariable = valorReal.getText().toString().length();
+
+                if(controlvariable == 0) {
+                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                }
+                else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
-                double ieneFinal = valorReal * (32.49);
+                double ieneFinal = valorReal * (32.57);
                 System.out.print(ieneFinal);
 
                 Intent intent3 = new Intent(MainActivity.this, IeneActivity.class);
@@ -114,11 +146,49 @@ public class MainActivity extends AppCompatActivity {
 //                passing.putDouble("ieneEnd", ieneFinal);
                 intent3.putExtra("passando_iene", ieneFinal);
 
-                startActivity(intent3);
+                startActivity(intent3);}
 
             }
         });
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client2 = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    public Action getIndexApiAction() {
+        Thing object = new Thing.Builder()
+                .setName("Main Page") // TODO: Define a title for the content shown.
+                // TODO: Make sure this auto-generated URL is correct.
+                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                .build();
+        return new Action.Builder(Action.TYPE_VIEW)
+                .setObject(object)
+                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                .build();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client2.connect();
+        AppIndex.AppIndexApi.start(client2, getIndexApiAction());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.end(client2, getIndexApiAction());
+        client2.disconnect();
+    }
 }
 

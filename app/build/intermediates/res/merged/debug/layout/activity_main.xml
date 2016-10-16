@@ -43,7 +43,7 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="100dp"
-        android:id="@+id/yeneid"
+        android:id="@+id/ieneid"
         android:layout_below="@+id/dolarid"
         android:layout_alignRight="@+id/dolarid"
         android:layout_alignEnd="@+id/dolarid"
@@ -54,7 +54,7 @@
         android:layout_width="150dp"
         android:layout_height="100dp"
         android:id="@+id/libraid"
-        android:layout_alignTop="@+id/yeneid"
+        android:layout_alignTop="@+id/ieneid"
         android:layout_alignLeft="@+id/euroid"
         android:layout_alignStart="@+id/euroid"
         android:src="@drawable/libra"
