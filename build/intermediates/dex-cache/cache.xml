@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_ff8248cc084ad6ef860ff74f155c65e5646fcb04/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="87a8c3db4a3b698f3e309c08af6ee9a62d3979d4">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_c9137f6569bb02dbac9b798bcaf44ab6210f4f67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.4.0_2cbf4a55f9ff34378434642e71623e96d2243ee7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_26847281bb4ee47251e2089b8efe5ab0cf7f9866/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_1a2c4f938adfc5e29a710bdbd68167c58c667b02/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="dbce40cc66dd7c37dc0be9977662f5c2677f0427">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_456754e3999936e76bb49bce07a1c1b1d9d721a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_2b44b11580ce67707a7ba496c40a8f0443b356a0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.4.0_8cbcbc84b026edf3886ee599c231da4fad143dd4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-8.4.0_3f44855b5b19af8586ad42db51e7a039bc6d0cf1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_d82f1bf600702cdaee3a4fc4df20c04fe88385e6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_fbb99fa201d12ef1dfc17575730a1da1b2b36073/classes.dex" />
+    </item>
+
+</items>
