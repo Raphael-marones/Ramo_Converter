@@ -9,10 +9,10 @@
     android:paddingRight="15dp"
     android:paddingTop="15dp"
     tools:context="conversorieee.studio.com.conversorieee.MainActivity"
-    android:background="@drawable/fundomoney">
+    android:background="@drawable/money_bg">
 
     <ImageView
-        android:layout_width="110dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/euroid"
         android:layout_alignTop="@+id/dolarid"
@@ -21,7 +21,7 @@
         android:background="@drawable/eurosymbol" />
 
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/ieneid"
         android:layout_below="@+id/dolarid"
@@ -41,21 +41,21 @@
         android:contentDescription="" />
 
     <TextView
-        android:layout_width="360dp"
-        android:layout_height="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Inserir valor em reais:"
         android:id="@+id/textView"
         android:textColor="@color/colorPrimaryDark"
         android:textAlignment="center"
         android:textStyle="bold"
-        android:textSize="40dp"
+        android:textSize="36sp"
         android:layout_marginTop="16dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="150dp"
+        android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/dolarid"
         android:background="@drawable/dolar"

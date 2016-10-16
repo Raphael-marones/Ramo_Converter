@@ -1,6 +1,10 @@
 [
     {
-        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi/ic_launcher.png",
-        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "C:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\raphaelsantos\\Documents\\Projects\\Android\\Ramo_Converter\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "C:\\Users\\raphaelsantos\\Documents\\Projects\\Android\\Ramo_Converter\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

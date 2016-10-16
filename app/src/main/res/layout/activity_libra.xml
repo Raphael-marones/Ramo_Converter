@@ -8,22 +8,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="conversorieee.studio.com.conversorieee.LibraActivity"
-    android:background="@drawable/fundomoney">
+    android:background="@drawable/money_bg">
 
     <TextView
-        android:layout_width="270dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="O valor em Libra é:"
-        android:textColor="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:id="@+id/textView3"
-        android:layout_marginTop="31dp"
-        android:background="#ffffff"
-        android:textSize="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent"
+        android:textSize="@dimen/title_txt"
+        android:id="@+id/textView3"
+        android:text="O valor em Libra é:"
+        />
 
     <TextView
         android:layout_width="150dp"
