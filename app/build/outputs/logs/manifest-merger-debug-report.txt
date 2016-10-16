@@ -1,79 +1,87 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:2:1-28:12
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:3:5-53
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:3:5-53
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
 application
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:5:5-26:19
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:19:5-20
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:20:5-24:19
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:5:5-30:19
+MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:19:5-20
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:20:5-24:19
 	android:label
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:10:9-41
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:8:9-41
 	android:supportsRtl
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:8:9-35
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:9:9-35
 	android:allowBackup
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:6:9-35
 	android:icon
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:7:9-43
 	android:theme
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:9:9-40
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:10:9-40
 activity#conversorieee.studio.com.conversorieee.MainActivity
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:11:9-17:20
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:11:9-17:20
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:11:19-47
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:11:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:12:13-16:29
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:12:13-16:29
 action#android.intent.action.MAIN
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:13:17-69
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:13:17-69
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:13:25-66
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:13:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:15:17-77
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:15:17-77
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:15:27-74
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:15:27-74
 activity#conversorieee.studio.com.conversorieee.DolarActivity
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:18:9-60
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:18:9-51
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:18:19-48
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:18:19-48
 activity#conversorieee.studio.com.conversorieee.EuroActivity
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:20:9-59
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:19:9-50
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:20:19-47
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:19:19-47
 meta-data#com.google.android.gms.version
-ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:23:9-25:69
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:21:9-23:69
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:24:9-26:69
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:25:13-66
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:26:13-66
 	android:name
-		ADDED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml:24:13-58
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:25:13-58
+activity#conversorieee.studio.com.conversorieee.LibraActivity
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:28:9-51
+	android:name
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:28:19-48
+activity#conversorieee.studio.com.conversorieee.IeneActivity
+ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:29:9-59
+	android:name
+		ADDED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml:29:19-47
 uses-sdk
-INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-vector-drawable:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:animated-vector-drawable:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-base:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/8.4.0/AndroidManifest.xml:18:5-42
-MERGED from [com.google.android.gms:play-services-basement:8.4.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.4.0/AndroidManifest.xml:18:5-42
+INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-v4:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-vector-drawable:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:animated-vector-drawable:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-appindexing:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-base:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\AndroidManifest.xml:18:5-42
+MERGED from [com.google.android.gms:play-services-basement:8.4.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\AndroidManifest.xml:18:5-42
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:24.0.0] /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:24.0.0] C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\AndroidManifest.xml

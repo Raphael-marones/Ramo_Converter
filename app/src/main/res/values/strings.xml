@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Conversor Monetário - Ramo IEEE</string>
-
+    <string name="titulo">Inserir valor em reais:</string>
 </resources>

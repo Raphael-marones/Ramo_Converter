@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/raphaelsantos/Documents/Projects/Android/ConversorIEEE/app/src/debug/shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\src\debug\shaders"/></dataSet></merger>
