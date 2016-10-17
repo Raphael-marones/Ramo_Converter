@@ -12,7 +12,7 @@
     android:background="@drawable/money_bg">
 
     <TextView
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#ffffff"
         android:textColor="@android:color/black"
