@@ -87,10 +87,11 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_width="150dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:textSize="@dimen/medium_txt"
         android:textColor="@android:color/black"
-        android:background="#ffffff"
+        android:background="@drawable/myborder"
+
         />
 
     <TextView
