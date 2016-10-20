@@ -21,6 +21,15 @@
         android:id="@+id/ieneid"
         android:src="@drawable/iene_button"
         />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/euroid"
+        android:background="@drawable/eur_button"
+        android:layout_marginLeft="1dp"
+        android:layout_toEndOf="@+id/centering"
+        android:layout_alignTop="@+id/dolarid"
+        />
 
     <ImageView
         android:layout_width="100dp"
@@ -30,6 +39,28 @@
         android:layout_alignStart="@+id/euroid"
         android:id="@+id/libraid"
         android:src="@drawable/lib_button"
+        />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:background="@drawable/plain_white_background_211387"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/realid"
+        android:layout_marginTop="125dp"
+        android:id="@+id/centering"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="1dp"
+        android:layout_above="@id/ieneid"
+        android:layout_toLeftOf="@+id/centering"
+        android:id="@+id/dolarid"
+        android:background="@drawable/usd_button"
         />
 
     <TextView
@@ -60,19 +91,6 @@
         android:textSize="@dimen/medium_txt"
         android:textColor="@android:color/black"
         android:background="#ffffff"
-        />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginStart="30dp"
-        android:layout_above="@id/ieneid"
-        android:layout_alignLeft="@+id/textView"
-        android:layout_alignStart="@+id/textView"
-        android:id="@+id/dolarid"
-        android:background="@drawable/usd_button"
         />
 
     <TextView
@@ -118,18 +136,8 @@
         android:layout_alignLeft="@+id/libraid"
         android:layout_alignStart="@+id/libraid"
         android:layout_marginLeft="25dp"
-        android:layout_marginStart="25dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/euroid"
-        android:background="@drawable/eur_button"
-        android:layout_marginRight="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_alignTop="@+id/dolarid"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginStart="25dp"
+        />
 
     <TextView
         android:text="Iene"

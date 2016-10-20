@@ -1,7 +1,7 @@
-#Mon Oct 17 00:21:43 BRST 2016
-base.0=C\:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_abbef69bbe54190c9e1a4ad421ed6d229b2057d7
+#Wed Oct 19 15:03:07 BRST 2016
+base.0=/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd3f223048ffa8ba03fb78371880f192cc7877ab
 renamed.1=classes.dex
 renamed.0=classes2.dex
-file.1=C\:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e0dbb405622d73df1a6889760aaa5b7632e52689\\classes.dex
-base.1=C\:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_e0dbb405622d73df1a6889760aaa5b7632e52689
-file.0=C\:\\Users\\Felipe\\Documents\\Faculdade\\IEEE\\WolfBytes\\Projetos\\GitHub\\Ramo_Converter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_abbef69bbe54190c9e1a4ad421ed6d229b2057d7\\classes.dex
+file.1=/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5cd534d37ce3674526963667b54c185cd32aa83c/classes.dex
+base.1=/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5cd534d37ce3674526963667b54c185cd32aa83c
+file.0=/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd3f223048ffa8ba03fb78371880f192cc7877ab/classes.dex

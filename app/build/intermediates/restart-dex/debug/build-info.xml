@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86,armeabi-v7a,armeabi"
-    api-level="21"
-    density="xxhdpi"
+    abi="x86_64,x86"
+    api-level="24"
+    density="560dpi"
     format="8"
     plugin-version="2.2.1"
-    timestamp="45835715053481"
-    token="2359692443258512275"
+    timestamp="13601783967023"
+    token="-2716813531379793360"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="3759" />
+        duration="318" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1186" />
+        duration="239" />
     <task
         name="verifier"
-        duration="289" />
+        duration="36" />
 
     <artifact
-        location="C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\outputs\apk\app-debug.apk"
+        location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="45835715053481"
+        timestamp="13601783967023"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\Felipe\Documents\Faculdade\IEEE\WolfBytes\Projetos\GitHub\Ramo_Converter\app\build\outputs\apk\app-debug.apk"
+            location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 
