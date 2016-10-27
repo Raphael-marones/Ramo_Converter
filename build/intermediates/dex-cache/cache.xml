@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="6b96743ae2fb8750a690a6814be34e21597168da">
+        sha1="cb247766ad9c06bb4efa94d67f01b01b20d5848e">
         <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd3f223048ffa8ba03fb78371880f192cc7877ab/classes.dex" />
     </item>
     <item
@@ -79,7 +79,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="b655271f01c3e36f53e4348aeed672178adb1282">
+        sha1="575e681926b66cd8e030df34074fc9517266e4a9">
         <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5cd534d37ce3674526963667b54c185cd32aa83c/classes.dex" />
     </item>
     <item

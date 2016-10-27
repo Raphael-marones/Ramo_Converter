@@ -1,10 +1,10 @@
 package conversorieee.studio.com.conversorieee;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
     public Double dollar_euro;
     public Double dollar_iene;
     public Double dollar_libra;
+    String moving_results;
+    SharedPreferences preferences;
+
 
 
     @Override
@@ -61,20 +64,58 @@ public class MainActivity extends AppCompatActivity {
         errorMessage.setGravity(Gravity.CENTER, 0, 0);
 
 
-        isNetworkConnected();
+        isOnline();
 
-        if (isNetworkConnected()==true){
+        if (isOnline()==true){
             new GetWebpageTask().execute("https://openexchangerates.org/api/latest.json?app_id=bce86f739d7b4cd9a60b82da71c9c742");
 
-        }
-        else if (isNetworkConnected()==false){
-            //AQUI DEVERIAMOS PUXAR VALORES DO SHARED PREFERENCES
+            preferences = PreferenceManager.getDefaultSharedPreferences(this);
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("Rates", moving_results);
+            editor.apply();
 
-            internetOff.show();
-            realEuro = 0.29;
-            realPound = 0.26;
-            realYen = 32.97;
-            dollar_real = 0.32;
+        }
+        else if (isOnline()==false){
+
+            preferences = PreferenceManager.getDefaultSharedPreferences(this);
+            String updated_rates = preferences.getString("Rates", "");
+
+            if (updated_rates.length()>0){
+
+
+                try{
+                    JSONObject obj = new JSONObject(updated_rates);
+                    JSONObject rates = obj.getJSONObject("rates");
+                    String reais = rates.getString("BRL");
+                    String euros = rates.getString("EUR");
+                    String ienes = rates.getString("JPY");
+                    String libras = rates.getString("GBP");
+
+                    dollar_real = 1/ Double.parseDouble(reais);
+                    dollar_euro = Double.parseDouble(euros);
+                    dollar_iene = Double.parseDouble(ienes);
+                    dollar_libra = Double.parseDouble(libras);
+
+                    realEuro = dollar_euro * dollar_real;
+                    realPound = dollar_libra * dollar_real;
+                    realYen = dollar_iene * dollar_real;}
+
+                catch (JSONException e1) {
+                    e1.printStackTrace();
+                }
+
+            }
+            else {
+
+                internetOff.show();
+                realEuro = 0.29;
+                realPound = 0.26;
+                realYen = 32.97;
+                dollar_real = 0.32;
+
+            }
+
+            //AQUI DEVERIAMOS PUXAR VALORES DO SHARED PREFERENCES
 
         }
 
@@ -224,10 +265,19 @@ public class MainActivity extends AppCompatActivity {
         return buffering.toString();
     }
 
-    private boolean isNetworkConnected() {
-        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+    public boolean isOnline() {
 
-        return cm.getActiveNetworkInfo() != null;
+        Runtime runtime = Runtime.getRuntime();
+        try {
+
+            Process ipProcess = runtime.exec("/system/bin/ping -c 1 8.8.8.8");
+            int     exitValue = ipProcess.waitFor();
+            return (exitValue == 0);
+
+        } catch (IOException e)          { e.printStackTrace(); }
+        catch (InterruptedException e) { e.printStackTrace(); }
+
+        return false;
     }
 
     public class GetWebpageTask extends AsyncTask<String,Void,String>{
@@ -243,41 +293,31 @@ public class MainActivity extends AppCompatActivity {
 
             super.onPostExecute(result);
 
+
+
             try{
 
-                int result_size = result.length();
-                if (result_size>0){
+                JSONObject obj = new JSONObject(result);
+                JSONObject rates = obj.getJSONObject("rates");
+                String reais = rates.getString("BRL");
+                String euros = rates.getString("EUR");
+                String ienes = rates.getString("JPY");
+                String libras = rates.getString("GBP");
 
-                    JSONObject obj = new JSONObject(result);
-                    JSONObject rates = obj.getJSONObject("rates");
+                dollar_real = 1/ Double.parseDouble(reais);
+                dollar_euro = Double.parseDouble(euros);
+                dollar_iene = Double.parseDouble(ienes);
+                dollar_libra = Double.parseDouble(libras);
 
-                    String reais = rates.getString("BRL");
-                    String euros = rates.getString("EUR");
-                    String ienes = rates.getString("JPY");
-                    String libras = rates.getString("GBP");
+                realEuro = dollar_euro * dollar_real;
+                realPound = dollar_libra * dollar_real;
+                realYen = dollar_iene * dollar_real;}
 
-                    dollar_real = 1/ Double.parseDouble(reais);
-                    dollar_euro = Double.parseDouble(euros);
-                    dollar_iene = Double.parseDouble(ienes);
-                    dollar_libra = Double.parseDouble(libras);
-
-                    realEuro = dollar_euro * dollar_real;
-                    realPound = dollar_libra * dollar_real;
-                    realYen = dollar_iene * dollar_real;}
-
-
-                else{
-                    realEuro = 0.29;
-                    realPound = 0.26;
-                    realYen = 32.97;
-                    dollar_real = 0.32;
-                }
-
-            } catch (JSONException e){
-                e.printStackTrace();
+            catch (JSONException e1) {
+                e1.printStackTrace();
             }
 
-
+            moving_results = result;
 
         }
 
