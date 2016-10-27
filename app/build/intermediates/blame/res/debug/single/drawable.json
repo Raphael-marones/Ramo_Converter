@@ -88,6 +88,10 @@
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_dialog_material_background.xml"
     },
     {
+        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable/plain_white_background_211387.png",
+        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/src/main/res/drawable/plain_white_background_211387.png"
+    },
+    {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable/abc_ic_voice_search_api_material.xml",
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_ic_voice_search_api_material.xml"
     },
@@ -106,6 +110,10 @@
     {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable/abc_seekbar_tick_mark_material.xml",
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable/abc_seekbar_tick_mark_material.xml"
+    },
+    {
+        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable/myborder.png",
+        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/src/main/res/drawable/myborder.png"
     },
     {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable/common_plus_signin_btn_icon_light.xml",

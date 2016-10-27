@@ -1,19 +1,28 @@
 package conversorieee.studio.com.conversorieee;
 
+import android.content.Context;
 import android.content.Intent;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+import android.net.ConnectivityManager;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.google.android.gms.appindexing.Action;
-import com.google.android.gms.appindexing.AppIndex;
-import com.google.android.gms.appindexing.Thing;
-import com.google.android.gms.common.api.GoogleApiClient;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +31,16 @@ public class MainActivity extends AppCompatActivity {
     private ImageView botaoEuro;
     private ImageView botaoLibra;
     private ImageView botaoIene;
+
+
+    public Double realPound;
+    public Double realEuro;
+    public Double realYen;
+    public Double dollar_real;
+    public Double dollar_euro;
+    public Double dollar_iene;
+    public Double dollar_libra;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +53,30 @@ public class MainActivity extends AppCompatActivity {
         botaoIene = (ImageView) findViewById(R.id.ieneid);
         valorReal = (EditText) findViewById(R.id.realid);
 
-        final Toast errorMessage = Toast.makeText(getApplicationContext(), "Ops!!!",Toast.LENGTH_SHORT);
+        final Toast errorMessage = Toast.makeText(getApplicationContext(), "Ops!!!" +
+                " Faltou inserir um valor válido",Toast.LENGTH_SHORT);
         errorMessage.setGravity(Gravity.CENTER, 0, 0);
 
-        final Toast correctionTodo = Toast.makeText(getApplicationContext(), "Faltou inserir um valor válido",Toast.LENGTH_LONG);
-        correctionTodo.setGravity(Gravity.CENTER, 0, 0);
+        final Toast internetOff = Toast.makeText(getApplicationContext(), "Ops!!!" + "SEM INTERNET: Valores podem não estar atualizados!!!",Toast.LENGTH_SHORT);
+        errorMessage.setGravity(Gravity.CENTER, 0, 0);
 
+
+        isNetworkConnected();
+
+        if (isNetworkConnected()==true){
+            new GetWebpageTask().execute("https://openexchangerates.org/api/latest.json?app_id=bce86f739d7b4cd9a60b82da71c9c742");
+
+        }
+        else if (isNetworkConnected()==false){
+            //AQUI DEVERIAMOS PUXAR VALORES DO SHARED PREFERENCES
+
+            internetOff.show();
+            realEuro = 0.29;
+            realPound = 0.26;
+            realYen = 32.97;
+            dollar_real = 0.32;
+
+        }
 
 
         botaoDolar.setOnClickListener(new View.OnClickListener() {
@@ -54,13 +91,13 @@ public class MainActivity extends AppCompatActivity {
                 if(controlvariable == 0) {
 
                     errorMessage.show();
-                    correctionTodo.show();
+
 
                 }
                 else {
                     double valorReal = Double.parseDouble(textoValorReal);
 
-                    double dolarFinal = valorReal / (3.35);
+                    double dolarFinal = valorReal * dollar_real;
 
 
                     Intent intent = new Intent(MainActivity.this, DolarActivity.class);
@@ -81,12 +118,13 @@ public class MainActivity extends AppCompatActivity {
                 int controlvariable = valorReal.getText().toString().length();
 
                 if(controlvariable == 0) {
-                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                    errorMessage.show();
+
                 }
                 else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
-                double euroFinal = valorReal / (3.68);
+                double euroFinal = valorReal * realEuro;
                 System.out.print(euroFinal);
 
                 Intent intent1 = new Intent(MainActivity.this, EuroActivity.class);
@@ -107,12 +145,13 @@ public class MainActivity extends AppCompatActivity {
                 int controlvariable = valorReal.getText().toString().length();
 
                 if(controlvariable == 0) {
-                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                    errorMessage.show();
+
                 }
                 else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
-                double libraFinal = valorReal / (4.22);
+                double libraFinal = valorReal * realPound;
                 System.out.print(libraFinal);
 
                 Intent intent2 = new Intent(MainActivity.this, LibraActivity.class);
@@ -131,12 +170,13 @@ public class MainActivity extends AppCompatActivity {
                 int controlvariable = valorReal.getText().toString().length();
 
                 if(controlvariable == 0) {
-                    Toast.makeText(getApplicationContext(), "Para realizar a conversão deve ser inserido um valor válido", Toast.LENGTH_SHORT).show();
+                    errorMessage.show();
+
                 }
                 else {
                 double valorReal = Double.parseDouble(textoValorReal);
 
-                double ieneFinal = valorReal * (32.57);
+                double ieneFinal = valorReal * realYen;
                 System.out.print(ieneFinal);
 
                 Intent intent3 = new Intent(MainActivity.this, IeneActivity.class);
@@ -148,6 +188,114 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+    private String getWebsite(String address){
+
+        StringBuffer buffering = new StringBuffer();
+
+        BufferedReader reader = null;
+
+        try{
+            URL url = new URL(address);
+            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
+            InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+
+            reader = new BufferedReader(new InputStreamReader(in));
+            String line ="";
+
+            while ((line = reader.readLine()) != null){
+                buffering.append(line);
+            }
+
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        finally {
+            if (reader != null){
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+        return buffering.toString();
+    }
+
+    private boolean isNetworkConnected() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        return cm.getActiveNetworkInfo() != null;
+    }
+
+    public class GetWebpageTask extends AsyncTask<String,Void,String>{
+
+
+//        @Override
+//        protected void onProgressUpdate(){
+//            super.onProgressUpdate();
+//        }
+
+        @Override
+        protected void onPostExecute(String result){
+
+            super.onPostExecute(result);
+
+            try{
+
+                int result_size = result.length();
+                if (result_size>0){
+
+                    JSONObject obj = new JSONObject(result);
+                    JSONObject rates = obj.getJSONObject("rates");
+
+                    String reais = rates.getString("BRL");
+                    String euros = rates.getString("EUR");
+                    String ienes = rates.getString("JPY");
+                    String libras = rates.getString("GBP");
+
+                    dollar_real = 1/ Double.parseDouble(reais);
+                    dollar_euro = Double.parseDouble(euros);
+                    dollar_iene = Double.parseDouble(ienes);
+                    dollar_libra = Double.parseDouble(libras);
+
+                    realEuro = dollar_euro * dollar_real;
+                    realPound = dollar_libra * dollar_real;
+                    realYen = dollar_iene * dollar_real;}
+
+
+                else{
+                    realEuro = 0.29;
+                    realPound = 0.26;
+                    realYen = 32.97;
+                    dollar_real = 0.32;
+                }
+
+            } catch (JSONException e){
+                e.printStackTrace();
+            }
+
+
+
+        }
+
+        @Override
+        protected void onPreExecute(){
+            super.onPreExecute();
+        }
+
+        @Override
+        protected String doInBackground(String... url) {
+
+            return getWebsite(url[0]);
+
+
+        }
+
+    }
+
 
 
 }

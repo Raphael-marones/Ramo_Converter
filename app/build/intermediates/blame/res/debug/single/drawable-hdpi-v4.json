@@ -156,11 +156,11 @@
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_half_black_48dp.png"
     },
     {
-        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
-        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_ic_star_black_48dp.png",
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_ic_star_black_48dp.png"
+    },
+    {
+        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png",
+        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     }
 ]

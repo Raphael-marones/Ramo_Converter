@@ -1,4 +1,4 @@
-#Wed Oct 19 15:03:07 BRST 2016
+#Thu Oct 27 11:24:55 BRST 2016
 base.0=/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd3f223048ffa8ba03fb78371880f192cc7877ab
 renamed.1=classes.dex
 renamed.0=classes2.dex
