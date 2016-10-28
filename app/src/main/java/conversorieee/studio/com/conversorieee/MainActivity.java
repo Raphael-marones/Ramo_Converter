@@ -69,13 +69,10 @@ public class MainActivity extends AppCompatActivity {
         if (isOnline()==true){
             new GetWebpageTask().execute("https://openexchangerates.org/api/latest.json?app_id=bce86f739d7b4cd9a60b82da71c9c742");
 
-            preferences = PreferenceManager.getDefaultSharedPreferences(this);
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putString("Rates", moving_results);
-            editor.apply();
 
         }
         else if (isOnline()==false){
+
 
             preferences = PreferenceManager.getDefaultSharedPreferences(this);
             String updated_rates = preferences.getString("Rates", "");
@@ -85,11 +82,11 @@ public class MainActivity extends AppCompatActivity {
 
                 try{
                     JSONObject obj = new JSONObject(updated_rates);
-                    JSONObject rates = obj.getJSONObject("rates");
-                    String reais = rates.getString("BRL");
-                    String euros = rates.getString("EUR");
-                    String ienes = rates.getString("JPY");
-                    String libras = rates.getString("GBP");
+                    JSONObject rates_from_api = obj.getJSONObject("rates");
+                    String reais = rates_from_api.getString("BRL");
+                    String euros = rates_from_api.getString("EUR");
+                    String ienes = rates_from_api.getString("JPY");
+                    String libras = rates_from_api.getString("GBP");
 
                     dollar_real = 1/ Double.parseDouble(reais);
                     dollar_euro = Double.parseDouble(euros);
@@ -230,41 +227,6 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private String getWebsite(String address){
-
-        StringBuffer buffering = new StringBuffer();
-
-        BufferedReader reader = null;
-
-        try{
-            URL url = new URL(address);
-            HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-            InputStream in = new BufferedInputStream(urlConnection.getInputStream());
-
-            reader = new BufferedReader(new InputStreamReader(in));
-            String line ="";
-
-            while ((line = reader.readLine()) != null){
-                buffering.append(line);
-            }
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        finally {
-            if (reader != null){
-                try {
-                    reader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
-        }
-        return buffering.toString();
-    }
-
     public boolean isOnline() {
 
         Runtime runtime = Runtime.getRuntime();
@@ -280,63 +242,86 @@ public class MainActivity extends AppCompatActivity {
         return false;
     }
 
-    public class GetWebpageTask extends AsyncTask<String,Void,String>{
-
+    public class GetWebpageTask extends AsyncTask<String,Void,Void> {
 
 //        @Override
 //        protected void onProgressUpdate(){
 //            super.onProgressUpdate();
 //        }
-
-        @Override
-        protected void onPostExecute(String result){
-
-            super.onPostExecute(result);
-
-
-
-            try{
-
-                JSONObject obj = new JSONObject(result);
-                JSONObject rates = obj.getJSONObject("rates");
-                String reais = rates.getString("BRL");
-                String euros = rates.getString("EUR");
-                String ienes = rates.getString("JPY");
-                String libras = rates.getString("GBP");
-
-                dollar_real = 1/ Double.parseDouble(reais);
-                dollar_euro = Double.parseDouble(euros);
-                dollar_iene = Double.parseDouble(ienes);
-                dollar_libra = Double.parseDouble(libras);
-
-                realEuro = dollar_euro * dollar_real;
-                realPound = dollar_libra * dollar_real;
-                realYen = dollar_iene * dollar_real;}
-
-            catch (JSONException e1) {
-                e1.printStackTrace();
-            }
-
-            moving_results = result;
-
-        }
+//
+//        @Override
+//        protected void onPostExecute(){
+//            super.onPostExecute();
+//        }
 
         @Override
         protected void onPreExecute(){
+
             super.onPreExecute();
         }
 
         @Override
-        protected String doInBackground(String... url) {
+        protected Void doInBackground(String... url) {
 
-            return getWebsite(url[0]);
+            StringBuffer buffering = new StringBuffer();
+
+            BufferedReader reader = null;
+
+            String address = url[0];
+
+            try {
+                URL urlString = new URL(address);
+                HttpURLConnection urlConnection = (HttpURLConnection) urlString.openConnection();
+                InputStream in = new BufferedInputStream(urlConnection.getInputStream());
+
+                reader = new BufferedReader(new InputStreamReader(in));
+                String line = "";
+
+                while ((line = reader.readLine()) != null) {
+                    buffering.append(line);
+                }
+
+                String result = buffering.toString();
+
+                JSONObject obj = new JSONObject(result);
+                JSONObject rates_from_api = obj.getJSONObject("rates");
+                String reais = rates_from_api.getString("BRL");
+                String euros = rates_from_api.getString("EUR");
+                String ienes = rates_from_api.getString("JPY");
+                String libras = rates_from_api.getString("GBP");
+
+                dollar_real = 1 / Double.parseDouble(reais);
+                dollar_euro = Double.parseDouble(euros);
+                dollar_iene = Double.parseDouble(ienes);
+                dollar_libra = Double.parseDouble(libras);
+                realEuro = dollar_euro * dollar_real;
+                realPound = dollar_libra * dollar_real;
+                realYen = dollar_iene * dollar_real;
 
 
+                preferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("Rates", moving_results);
+                editor.apply();
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } finally {
+                if (reader != null) {
+                    try {
+                        reader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+            return null;
         }
 
     }
-
-
-
 }
 

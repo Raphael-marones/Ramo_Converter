@@ -5,36 +5,36 @@
     density="560dpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="11208938100264"
+    timestamp="22099078890894"
     token="-2716813531379793360"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="266" />
+        duration="1090" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="79" />
+        duration="149" />
     <task
         name="verifier"
-        duration="31" />
+        duration="3" />
 
     <artifact
         location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"
         type="DEX" />
 
     <build
-        timestamp="8183050779860"
+        timestamp="18259631592000"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="11208938100264"
+        timestamp="22099078890894"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_5/classes.dex"

@@ -8,12 +8,12 @@
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_spinner.xml"
     },
     {
-        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
-        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
-    },
-    {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
         "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/res/color-v23/abc_tint_switch_track.xml"
     },
     {
         "merged": "/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",

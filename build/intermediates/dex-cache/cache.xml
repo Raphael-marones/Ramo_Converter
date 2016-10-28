@@ -12,24 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/raphaelsantos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_26847281bb4ee47251e2089b8efe5ab0cf7f9866/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_19a8d251fddabee2e5dfa2a5880fd4968a4d5472/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -48,11 +30,38 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7525ce62b2019c6253b36eea8672a1f3426896fb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_26847281bb4ee47251e2089b8efe5ab0cf7f9866/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.0"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_19a8d251fddabee2e5dfa2a5880fd4968a4d5472/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="cb247766ad9c06bb4efa94d67f01b01b20d5848e">
+        sha1="580145abc81923508bbc8faec83285ffdfbe2476">
         <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_cd3f223048ffa8ba03fb78371880f192cc7877ab/classes.dex" />
     </item>
     <item
@@ -79,17 +88,8 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.0"
-        sha1="575e681926b66cd8e030df34074fc9517266e4a9">
+        sha1="ce9e75d6547e5026c08ec3829d59f1d141655d9a">
         <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_5cd534d37ce3674526963667b54c185cd32aa83c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.0"
-        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/raphaelsantos/Documents/Projects/Android/Ramo_Converter/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_7525ce62b2019c6253b36eea8672a1f3426896fb/classes.dex" />
     </item>
     <item
         is-multidex="true"
